@@ -9,7 +9,7 @@ def exec_clang_tidy(file_list, op_dir, inc_path, c_cpp):
             output_file = os.path.join(op_dir, input_file.split("/")[-1].split(".")[0]+f"_{c_cpp}" + ".yaml")
             # clang-tidy file --checks=* -- -I{include_path} -std=c11/c++11
             # optional: --header-filter=.* --system-headers
-            command = ["clang-tidy", input_file, f"-export-fixes={output_file}", "--checks=security*", "--", f"-I{inc_path}",
+            command = ["clang-tidy", input_file, f"-export-fixes={output_file}", "--checks=*", "--", f"-I{inc_path}",
                        f"-std={c_cpp}11", ""]
             print(f"Executing: {command}")
             result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
