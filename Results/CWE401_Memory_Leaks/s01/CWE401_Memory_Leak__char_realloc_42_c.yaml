@@ -1,0 +1,155 @@
+---
+MainSourceFile:  '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+Diagnostics:
+  - DiagnosticName:  llvmlibc-restrict-system-libc-headers
+    DiagnosticMessage:
+      Message:         system include wchar.h not allowed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+      FileOffset:      557
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+          Offset:          557
+          Length:          20
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  bugprone-suspicious-realloc-usage
+    DiagnosticMessage:
+      Message:         '''data'' may be set to null if ''realloc'' fails, which may result in a leak of the original buffer'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+      FileOffset:      713
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+          FileOffset:      721
+          Length:          4
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+          FileOffset:      698
+          Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+      FileOffset:      727
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  concurrency-mt-unsafe
+    DiagnosticMessage:
+      Message:         function is not thread safe
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+      FileOffset:      770
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+      FileOffset:      962
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+          Offset:          966
+          Length:          0
+          ReplacementText: ' = NULL'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-diagnostic-int-to-pointer-cast
+    DiagnosticMessage:
+      Message:         'cast to ''char *'' from smaller integer type ''int'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+      FileOffset:      1337
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+          FileOffset:      1337
+          Length:          32
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  performance-no-int-to-ptr
+    DiagnosticMessage:
+      Message:         integer to pointer cast pessimizes optimization opportunities
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+      FileOffset:      1337
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-diagnostic-implicit-function-declaration
+    DiagnosticMessage:
+      Message:         'call to undeclared function ''alloca''; ISO C99 and later do not support implicit function declarations'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+      FileOffset:      1345
+      Replacements:    []
+    Notes:
+      - Message:         'expanded from macro ''ALLOCA'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase.h'
+        FileOffset:      1270
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+      FileOffset:      1352
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+      FileOffset:      1528
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+          Offset:          1532
+          Length:          0
+          ReplacementText: ' = NULL'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  bugprone-suspicious-realloc-usage
+    DiagnosticMessage:
+      Message:         '''data'' may be set to null if ''realloc'' fails, which may result in a leak of the original buffer'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+      FileOffset:      1864
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+          FileOffset:      1872
+          Length:          4
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+          FileOffset:      1849
+          Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+      FileOffset:      1878
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  concurrency-mt-unsafe
+    DiagnosticMessage:
+      Message:         function is not thread safe
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+      FileOffset:      1921
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+      FileOffset:      2088
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_realloc_42.c'
+          Offset:          2092
+          Length:          0
+          ReplacementText: ' = NULL'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+...

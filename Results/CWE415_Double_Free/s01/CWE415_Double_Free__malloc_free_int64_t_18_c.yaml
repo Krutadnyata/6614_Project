@@ -1,0 +1,157 @@
+---
+MainSourceFile:  '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+Diagnostics:
+  - DiagnosticName:  llvmlibc-restrict-system-libc-headers
+    DiagnosticMessage:
+      Message:         system include wchar.h not allowed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+      FileOffset:      550
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+          Offset:          550
+          Length:          20
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+      FileOffset:      663
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+          Offset:          667
+          Length:          0
+          ReplacementText: ' = NULL'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+      FileOffset:      771
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  concurrency-mt-unsafe
+    DiagnosticMessage:
+      Message:         function is not thread safe
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+      FileOffset:      817
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-unix.Malloc
+    DiagnosticMessage:
+      Message:         Attempt to free released memory
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+      FileOffset:      1014
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+          FileOffset:      1014
+          Length:          10
+    Notes:
+      - Message:         Control jumps to line 31
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+        FileOffset:      719
+        Replacements:    []
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+        FileOffset:      764
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+            FileOffset:      764
+            Length:          27
+      - Message:         'Assuming ''data'' is not equal to NULL'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+        FileOffset:      802
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+            FileOffset:      802
+            Length:          12
+      - Message:         Taking false branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+        FileOffset:      798
+        Replacements:    []
+      - Message:         Memory is released
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+        FileOffset:      917
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+            FileOffset:      917
+            Length:          10
+      - Message:         Control jumps to line 38
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+        FileOffset:      934
+        Replacements:    []
+      - Message:         Attempt to free released memory
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+        FileOffset:      1014
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+            FileOffset:      1014
+            Length:          10
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+      FileOffset:      1215
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+          Offset:          1219
+          Length:          0
+          ReplacementText: ' = NULL'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+      FileOffset:      1323
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  concurrency-mt-unsafe
+    DiagnosticMessage:
+      Message:         function is not thread safe
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+      FileOffset:      1369
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+      FileOffset:      1778
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+          Offset:          1782
+          Length:          0
+          ReplacementText: ' = NULL'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+      FileOffset:      1886
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  concurrency-mt-unsafe
+    DiagnosticMessage:
+      Message:         function is not thread safe
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_18.c'
+      FileOffset:      1932
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+...

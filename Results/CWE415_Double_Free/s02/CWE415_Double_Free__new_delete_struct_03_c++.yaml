@@ -1,0 +1,703 @@
+---
+MainSourceFile:  '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+Diagnostics:
+  - DiagnosticName:  llvmlibc-restrict-system-libc-headers
+    DiagnosticMessage:
+      Message:         system include wchar.h not allowed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      546
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          Offset:          546
+          Length:          20
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  hicpp-deprecated-headers
+    DiagnosticMessage:
+      Message:         'inclusion of deprecated C++ header ''wchar.h''; consider using ''cwchar'' instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      555
+      Replacements:    []
+    Notes:
+      - Message:         this fix will not be applied because it overlaps with another fix
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  bugprone-reserved-identifier
+    DiagnosticMessage:
+      Message:         'declaration uses identifier ''CWE415_Double_Free__new_delete_struct_03'', which is a reserved identifier'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      578
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          Offset:          578
+          Length:          40
+          ReplacementText: CWE415_Double_Free_new_delete_struct_03
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-implementation-in-namespace
+    DiagnosticMessage:
+      Message:         '''__llvm_libc'' needs to be the outermost namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      578
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      679
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          Offset:          683
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      724
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          Offset:          724
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      738
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      741
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''twoIntsStruct *'' (aka ''_twoIntsStruct *'')'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      760
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          FileOffset:      760
+          Length:          24
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      888
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          FileOffset:      895
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      663
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+            FileOffset:      663
+            Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      916
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      919
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-cplusplus.NewDelete
+    DiagnosticMessage:
+      Message:         Attempt to free released memory
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1000
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          FileOffset:      1000
+          Length:          11
+    Notes:
+      - Message:         5 is equal to 5
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      738
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+            FileOffset:      738
+            Length:          1
+      - Message:         Taking true branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      735
+        Replacements:    []
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      767
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+            FileOffset:      767
+            Length:          17
+      - Message:         Memory is released
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      888
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+            FileOffset:      888
+            Length:          11
+      - Message:         5 is equal to 5
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      916
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+            FileOffset:      916
+            Length:          1
+      - Message:         Taking true branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      913
+        Replacements:    []
+      - Message:         Attempt to free released memory
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      1000
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+            FileOffset:      1000
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1000
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          FileOffset:      1007
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      663
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+            FileOffset:      663
+            Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodB2G1'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1165
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1200
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          Offset:          1204
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1245
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          Offset:          1245
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1259
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1262
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''twoIntsStruct *'' (aka ''_twoIntsStruct *'')'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1281
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          FileOffset:      1281
+          Length:          24
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1409
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          FileOffset:      1416
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      1184
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+            FileOffset:      1184
+            Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1437
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1440
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1535
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      311
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodB2G2'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1851
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1886
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          Offset:          1890
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1931
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          Offset:          1931
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1945
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1948
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''twoIntsStruct *'' (aka ''_twoIntsStruct *'')'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      1967
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          FileOffset:      1967
+          Length:          24
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      2095
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          FileOffset:      2102
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      1870
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+            FileOffset:      1870
+            Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      2123
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      2126
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodG2B1'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      2387
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      2422
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          Offset:          2426
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      2467
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          Offset:          2467
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      2481
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      2484
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      2579
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      311
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''twoIntsStruct *'' (aka ''_twoIntsStruct *'')'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      2647
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          FileOffset:      2647
+          Length:          24
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      2769
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      2772
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      2853
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          FileOffset:      2860
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      2406
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+            FileOffset:      2406
+            Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodG2B2'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      2978
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      3013
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          Offset:          3017
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      3058
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          Offset:          3058
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      3072
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      3075
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''twoIntsStruct *'' (aka ''_twoIntsStruct *'')'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      3094
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          FileOffset:      3094
+          Length:          24
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      3216
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      3219
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      3300
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+          FileOffset:      3307
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      2997
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+            FileOffset:      2997
+            Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodB2G1'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      3346
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      1165
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodB2G2'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      3363
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      1851
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodG2B1'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      3380
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      2387
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodG2B2'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      3397
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      2978
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-namespace-comments
+    DiagnosticMessage:
+      Message:         'namespace ''CWE415_Double_Free__new_delete_struct_03'' not terminated with a closing comment'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+      FileOffset:      3440
+      Replacements:    []
+    Notes:
+      - Message:         'namespace ''CWE415_Double_Free__new_delete_struct_03'' starts here'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_03.cpp'
+        FileOffset:      578
+        Replacements:    []
+      - Message:         'cannot apply fix-it because an alias checker has suggested a different fix-it; please remove one of the checkers (''google-readability-namespace-comments'', ''llvm-namespace-comment'') or ensure they are both configured the same'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+...

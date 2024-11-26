@@ -1,0 +1,852 @@
+---
+MainSourceFile:  '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+Diagnostics:
+  - DiagnosticName:  llvmlibc-restrict-system-libc-headers
+    DiagnosticMessage:
+      Message:         system include wchar.h not allowed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      642
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          642
+          Length:          20
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  hicpp-deprecated-headers
+    DiagnosticMessage:
+      Message:         'inclusion of deprecated C++ header ''wchar.h''; consider using ''cwchar'' instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      651
+      Replacements:    []
+    Notes:
+      - Message:         this fix will not be applied because it overlaps with another fix
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  bugprone-reserved-identifier
+    DiagnosticMessage:
+      Message:         'declaration uses identifier ''CWE416_Use_After_Free__new_delete_array_char_09'', which is a reserved identifier'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      674
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          674
+          Length:          47
+          ReplacementText: CWE416_Use_After_Free_new_delete_array_char_09
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-implementation-in-namespace
+    DiagnosticMessage:
+      Message:         '''__llvm_libc'' needs to be the outermost namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      674
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      773
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          777
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      818
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          818
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      832
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          849
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''char *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      867
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          FileOffset:      867
+          Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      883
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      916
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-bounds-pointer-arithmetic
+    DiagnosticMessage:
+      Message:         do not use pointer arithmetic
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      933
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      938
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      1055
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          FileOffset:      1065
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      766
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+            FileOffset:      766
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      1086
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          1103
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-cplusplus.NewDelete
+    DiagnosticMessage:
+      Message:         Use of memory after it is freed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      1191
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          FileOffset:      1201
+          Length:          4
+    Notes:
+      - Message:         'Assuming ''GLOBAL_CONST_TRUE'' is not equal to 0'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      832
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+            FileOffset:      832
+            Length:          17
+      - Message:         Taking true branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      829
+        Replacements:    []
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      874
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+            FileOffset:      874
+            Length:          13
+      - Message:         Memory is released
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      1055
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+            FileOffset:      1055
+            Length:          14
+      - Message:         '''GLOBAL_CONST_TRUE'' is not equal to 0'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      1086
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+            FileOffset:      1086
+            Length:          17
+      - Message:         Taking true branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      1083
+        Replacements:    []
+      - Message:         Use of memory after it is freed
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      1191
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+            FileOffset:      1201
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      1191
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      311
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodB2G1'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      1475
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      1501
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          1505
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      1546
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          1546
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      1560
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          1577
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''char *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      1595
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          FileOffset:      1595
+          Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      1611
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      1644
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-bounds-pointer-arithmetic
+    DiagnosticMessage:
+      Message:         do not use pointer arithmetic
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      1661
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      1666
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      1783
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          FileOffset:      1793
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      1494
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+            FileOffset:      1494
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      1814
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          1832
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      1926
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      311
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodB2G2'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      2345
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      2371
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          2375
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      2416
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          2416
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      2430
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          2447
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''char *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      2465
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          FileOffset:      2465
+          Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      2481
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      2514
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-bounds-pointer-arithmetic
+    DiagnosticMessage:
+      Message:         do not use pointer arithmetic
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      2531
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      2536
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      2653
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          FileOffset:      2663
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      2364
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+            FileOffset:      2364
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      2684
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          2701
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodG2B1'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3091
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3117
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          3121
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3162
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          3162
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3176
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          3194
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3288
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      311
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''char *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3356
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          FileOffset:      3356
+          Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3372
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3405
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-bounds-pointer-arithmetic
+    DiagnosticMessage:
+      Message:         do not use pointer arithmetic
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3422
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3427
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3510
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          3527
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3615
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      311
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-cplusplus.NewDeleteLeaks
+    DiagnosticMessage:
+      Message:         'Potential leak of memory pointed to by ''data'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3728
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''goodG2B1'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      4383
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+            FileOffset:      4383
+            Length:          10
+      - Message:         '''GLOBAL_CONST_FALSE'' is 0'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      3176
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+            FileOffset:      3176
+            Length:          18
+      - Message:         Taking false branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      3173
+        Replacements:    []
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      3363
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+            FileOffset:      3363
+            Length:          13
+      - Message:         '''GLOBAL_CONST_TRUE'' is 0'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      3510
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+            FileOffset:      3510
+            Length:          17
+      - Message:         Taking false branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      3507
+        Replacements:    []
+      - Message:         'Potential leak of memory pointed to by ''data'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      3728
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodG2B2'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3832
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3858
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          3862
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3903
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          3903
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3917
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          3934
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''char *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3952
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          FileOffset:      3952
+          Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      3968
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      4001
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-bounds-pointer-arithmetic
+    DiagnosticMessage:
+      Message:         do not use pointer arithmetic
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      4018
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      4023
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      4106
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+          Offset:          4123
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      4211
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      311
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodB2G1'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      4349
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      1475
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodB2G2'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      4366
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      2345
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodG2B1'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      4383
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      3091
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodG2B2'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      4400
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      3832
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-namespace-comments
+    DiagnosticMessage:
+      Message:         'namespace ''CWE416_Use_After_Free__new_delete_array_char_09'' not terminated with a closing comment'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+      FileOffset:      4443
+      Replacements:    []
+    Notes:
+      - Message:         'namespace ''CWE416_Use_After_Free__new_delete_array_char_09'' starts here'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_char_09.cpp'
+        FileOffset:      674
+        Replacements:    []
+      - Message:         'cannot apply fix-it because an alias checker has suggested a different fix-it; please remove one of the checkers (''google-readability-namespace-comments'', ''llvm-namespace-comment'') or ensure they are both configured the same'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+...

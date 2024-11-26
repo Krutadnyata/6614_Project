@@ -1,0 +1,410 @@
+---
+MainSourceFile:  '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+Diagnostics:
+  - DiagnosticName:  llvmlibc-implementation-in-namespace
+    DiagnosticMessage:
+      Message:         '''__llvm_libc'' needs to be the outermost namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      677
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      779
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+          Offset:          783
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      824
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+          Offset:          824
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''wchar_t *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      835
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+          FileOffset:      835
+          Length:          23
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      854
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      974
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+          FileOffset:      984
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+        FileOffset:      769
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+            FileOffset:      769
+            Length:          14
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-cplusplus.NewDelete
+    DiagnosticMessage:
+      Message:         Use of memory after it is freed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      1124
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+          FileOffset:      1143
+          Length:          4
+    Notes:
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+        FileOffset:      842
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+            FileOffset:      842
+            Length:          16
+      - Message:         Memory is released
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+        FileOffset:      974
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+            FileOffset:      974
+            Length:          14
+      - Message:         Use of memory after it is freed
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+        FileOffset:      1124
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+            FileOffset:      1143
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-diagnostic-delete-abstract-non-virtual-dtor
+    DiagnosticMessage:
+      Message:         'delete called on ''CWE415_Double_Free__new_delete_array_wchar_t_82::CWE415_Double_Free__new_delete_array_wchar_t_82_base'' that is abstract but has non-virtual destructor'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      1155
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      1155
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+          FileOffset:      1162
+          Length:          10
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+        FileOffset:      995
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+            FileOffset:      995
+            Length:          122
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodG2B'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      1288
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      1316
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+          Offset:          1320
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      1361
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+          Offset:          1361
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''wchar_t *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      1372
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+          FileOffset:      1372
+          Length:          23
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      1391
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-diagnostic-delete-abstract-non-virtual-dtor
+    DiagnosticMessage:
+      Message:         'delete called on ''CWE415_Double_Free__new_delete_array_wchar_t_82::CWE415_Double_Free__new_delete_array_wchar_t_82_base'' that is abstract but has non-virtual destructor'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      1663
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      1663
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+          FileOffset:      1670
+          Length:          10
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+        FileOffset:      1499
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+            FileOffset:      1499
+            Length:          126
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodB2G'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      1752
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      1780
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+          Offset:          1784
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      1825
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+          Offset:          1825
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''wchar_t *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      1836
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+          FileOffset:      1836
+          Length:          23
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      1855
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      1975
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+          FileOffset:      1985
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+        FileOffset:      1770
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+            FileOffset:      1770
+            Length:          14
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-cplusplus.NewDelete
+    DiagnosticMessage:
+      Message:         Use of memory after it is freed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      2129
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''goodB2G'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+        FileOffset:      2221
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+            FileOffset:      2221
+            Length:          9
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+        FileOffset:      1843
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+            FileOffset:      1843
+            Length:          16
+      - Message:         Memory is released
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+        FileOffset:      1975
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+            FileOffset:      1975
+            Length:          14
+      - Message:         Use of memory after it is freed
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+        FileOffset:      2129
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+            FileOffset:      2148
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-diagnostic-delete-abstract-non-virtual-dtor
+    DiagnosticMessage:
+      Message:         'delete called on ''CWE415_Double_Free__new_delete_array_wchar_t_82::CWE415_Double_Free__new_delete_array_wchar_t_82_base'' that is abstract but has non-virtual destructor'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      2160
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      2160
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+          FileOffset:      2167
+          Length:          10
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+        FileOffset:      1996
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+            FileOffset:      1996
+            Length:          126
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodG2B'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      2205
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+        FileOffset:      1288
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodB2G'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      2221
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+        FileOffset:      1752
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-namespace-comments
+    DiagnosticMessage:
+      Message:         'namespace ''CWE415_Double_Free__new_delete_array_wchar_t_82'' not terminated with a closing comment'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+      FileOffset:      2263
+      Replacements:    []
+    Notes:
+      - Message:         'namespace ''CWE415_Double_Free__new_delete_array_wchar_t_82'' starts here'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_wchar_t_82a.cpp'
+        FileOffset:      677
+        Replacements:    []
+      - Message:         'cannot apply fix-it because an alias checker has suggested a different fix-it; please remove one of the checkers (''google-readability-namespace-comments'', ''llvm-namespace-comment'') or ensure they are both configured the same'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+...

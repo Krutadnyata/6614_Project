@@ -1,0 +1,713 @@
+---
+MainSourceFile:  '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+Diagnostics:
+  - DiagnosticName:  llvmlibc-restrict-system-libc-headers
+    DiagnosticMessage:
+      Message:         system include wchar.h not allowed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      633
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          Offset:          633
+          Length:          20
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  hicpp-deprecated-headers
+    DiagnosticMessage:
+      Message:         'inclusion of deprecated C++ header ''wchar.h''; consider using ''cwchar'' instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      642
+      Replacements:    []
+    Notes:
+      - Message:         this fix will not be applied because it overlaps with another fix
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-implementation-in-namespace
+    DiagnosticMessage:
+      Message:         'declaration must be declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      823
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  bugprone-reserved-identifier
+    DiagnosticMessage:
+      Message:         'declaration uses identifier ''CWE416_Use_After_Free__new_delete_char_06'', which is a reserved identifier'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      859
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          Offset:          859
+          Length:          41
+          ReplacementText: CWE416_Use_After_Free_new_delete_char_06
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-implementation-in-namespace
+    DiagnosticMessage:
+      Message:         '''__llvm_libc'' needs to be the outermost namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      859
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      952
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          Offset:          956
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      997
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          Offset:          997
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      1030
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''char *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      1049
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          FileOffset:      1049
+          Length:          15
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      1190
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          FileOffset:      1197
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      945
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+            FileOffset:      945
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      1237
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printHexCharLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      1326
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      655
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-cplusplus.NewDelete
+    DiagnosticMessage:
+      Message:         Use of memory after it is freed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      1343
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          FileOffset:      1343
+          Length:          5
+    Notes:
+      - Message:         '''STATIC_CONST_FIVE'' is equal to 5'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      1011
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+            FileOffset:      1011
+            Length:          17
+      - Message:         Taking true branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      1008
+        Replacements:    []
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      1056
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+            FileOffset:      1056
+            Length:          8
+      - Message:         Memory is released
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      1190
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+            FileOffset:      1190
+            Length:          11
+      - Message:         '''STATIC_CONST_FIVE'' is equal to 5'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      1218
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+            FileOffset:      1218
+            Length:          17
+      - Message:         Taking true branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      1215
+        Replacements:    []
+      - Message:         Use of memory after it is freed
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      1343
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+            FileOffset:      1343
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodB2G1'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      1623
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      1649
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          Offset:          1653
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      1694
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          Offset:          1694
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      1727
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''char *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      1746
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          FileOffset:      1746
+          Length:          15
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      1887
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          FileOffset:      1894
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      1642
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+            FileOffset:      1642
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      1934
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      2029
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      311
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodB2G2'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      2448
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      2474
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          Offset:          2478
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      2519
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          Offset:          2519
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      2552
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''char *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      2571
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          FileOffset:      2571
+          Length:          15
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      2712
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          FileOffset:      2719
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      2467
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+            FileOffset:      2467
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      2759
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodG2B1'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      3155
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      3181
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          Offset:          3185
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      3226
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          Offset:          3226
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      3259
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      3354
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      311
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''char *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      3422
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          FileOffset:      3422
+          Length:          15
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      3548
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-cplusplus.NewDeleteLeaks
+    DiagnosticMessage:
+      Message:         'Potential leak of memory pointed to by ''data'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      3637
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''goodG2B1'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      4380
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+            FileOffset:      4380
+            Length:          10
+      - Message:         '''STATIC_CONST_FIVE'' is equal to 5'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      3240
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+            FileOffset:      3240
+            Length:          17
+      - Message:         Taking false branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      3237
+        Replacements:    []
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      3429
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+            FileOffset:      3429
+            Length:          8
+      - Message:         '''STATIC_CONST_FIVE'' is equal to 5'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      3529
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+            FileOffset:      3529
+            Length:          17
+      - Message:         Taking true branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      3526
+        Replacements:    []
+      - Message:         'Potential leak of memory pointed to by ''data'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      3637
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printHexCharLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      3637
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      655
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodG2B2'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      3862
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      3888
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          Offset:          3892
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      3933
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          Offset:          3933
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      3966
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''char *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      3985
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+          FileOffset:      3985
+          Length:          15
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '5 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      4111
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-cplusplus.NewDeleteLeaks
+    DiagnosticMessage:
+      Message:         'Potential leak of memory pointed to by ''data'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      4200
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''goodG2B2'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      4397
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+            FileOffset:      4397
+            Length:          10
+      - Message:         '''STATIC_CONST_FIVE'' is equal to 5'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      3947
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+            FileOffset:      3947
+            Length:          17
+      - Message:         Taking true branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      3944
+        Replacements:    []
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      3992
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+            FileOffset:      3992
+            Length:          8
+      - Message:         '''STATIC_CONST_FIVE'' is equal to 5'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      4092
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+            FileOffset:      4092
+            Length:          17
+      - Message:         Taking true branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      4089
+        Replacements:    []
+      - Message:         'Potential leak of memory pointed to by ''data'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      4200
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printHexCharLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      4200
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      655
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodB2G1'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      4346
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      1623
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodB2G2'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      4363
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      2448
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodG2B1'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      4380
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      3155
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodG2B2'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      4397
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      3862
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-namespace-comments
+    DiagnosticMessage:
+      Message:         'namespace ''CWE416_Use_After_Free__new_delete_char_06'' not terminated with a closing comment'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+      FileOffset:      4440
+      Replacements:    []
+    Notes:
+      - Message:         'namespace ''CWE416_Use_After_Free__new_delete_char_06'' starts here'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_06.cpp'
+        FileOffset:      859
+        Replacements:    []
+      - Message:         'cannot apply fix-it because an alias checker has suggested a different fix-it; please remove one of the checkers (''google-readability-namespace-comments'', ''llvm-namespace-comment'') or ensure they are both configured the same'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+...

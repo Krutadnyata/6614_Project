@@ -1,0 +1,243 @@
+---
+MainSourceFile:  '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+Diagnostics:
+  - DiagnosticName:  llvmlibc-restrict-system-libc-headers
+    DiagnosticMessage:
+      Message:         system include wchar.h not allowed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+      FileOffset:      619
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+          Offset:          619
+          Length:          20
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  hicpp-deprecated-headers
+    DiagnosticMessage:
+      Message:         'inclusion of deprecated C++ header ''wchar.h''; consider using ''cwchar'' instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+      FileOffset:      628
+      Replacements:    []
+    Notes:
+      - Message:         this fix will not be applied because it overlaps with another fix
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  bugprone-reserved-identifier
+    DiagnosticMessage:
+      Message:         'declaration uses identifier ''CWE415_Double_Free__new_delete_array_int64_t_64'', which is a reserved identifier'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+      FileOffset:      651
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+          Offset:          651
+          Length:          47
+          ReplacementText: CWE415_Double_Free_new_delete_array_int64_t_64
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-implementation-in-namespace
+    DiagnosticMessage:
+      Message:         '''__llvm_libc'' needs to be the outermost namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+      FileOffset:      651
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  hicpp-use-auto
+    DiagnosticMessage:
+      Message:         use auto when initializing with a cast to avoid duplicating the type name
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+      FileOffset:      831
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+          Offset:          831
+          Length:          7
+          ReplacementText: auto
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-type-cstyle-cast
+    DiagnosticMessage:
+      Message:         do not use C-style cast to convert between unrelated types
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+      FileOffset:      853
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-casting
+    DiagnosticMessage:
+      Message:         'C-style casts are discouraged; use static_cast'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+      FileOffset:      853
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+          Offset:          853
+          Length:          13
+          ReplacementText: 'static_cast<int64_t * *>('
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+          Offset:          877
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+      FileOffset:      1017
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+          FileOffset:      1027
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+        FileOffset:      925
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+            FileOffset:      925
+            Length:          27
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  hicpp-use-auto
+    DiagnosticMessage:
+      Message:         use auto when initializing with a cast to avoid duplicating the type name
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+      FileOffset:      1246
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+          Offset:          1246
+          Length:          7
+          ReplacementText: auto
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-type-cstyle-cast
+    DiagnosticMessage:
+      Message:         do not use C-style cast to convert between unrelated types
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+      FileOffset:      1268
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-casting
+    DiagnosticMessage:
+      Message:         'C-style casts are discouraged; use static_cast'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+      FileOffset:      1268
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+          Offset:          1268
+          Length:          13
+          ReplacementText: 'static_cast<int64_t * *>('
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+          Offset:          1292
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+      FileOffset:      1432
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+          FileOffset:      1442
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+        FileOffset:      1340
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+            FileOffset:      1340
+            Length:          27
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  hicpp-use-auto
+    DiagnosticMessage:
+      Message:         use auto when initializing with a cast to avoid duplicating the type name
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+      FileOffset:      1617
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+          Offset:          1617
+          Length:          7
+          ReplacementText: auto
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-type-cstyle-cast
+    DiagnosticMessage:
+      Message:         do not use C-style cast to convert between unrelated types
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+      FileOffset:      1639
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-casting
+    DiagnosticMessage:
+      Message:         'C-style casts are discouraged; use static_cast'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+      FileOffset:      1639
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+          Offset:          1639
+          Length:          13
+          ReplacementText: 'static_cast<int64_t * *>('
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+          Offset:          1663
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-deadcode.DeadStores
+    DiagnosticMessage:
+      Message:         'Value stored to ''data'' during its initialization is never read'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+      FileOffset:      1721
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+          FileOffset:      1721
+          Length:          4
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+          FileOffset:      1728
+          Length:          10
+    Notes:
+      - Message:         'Value stored to ''data'' during its initialization is never read'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+        FileOffset:      1721
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+            FileOffset:      1721
+            Length:          4
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+            FileOffset:      1728
+            Length:          10
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-namespace-comments
+    DiagnosticMessage:
+      Message:         'namespace ''CWE415_Double_Free__new_delete_array_int64_t_64'' not terminated with a closing comment'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+      FileOffset:      1903
+      Replacements:    []
+    Notes:
+      - Message:         'namespace ''CWE415_Double_Free__new_delete_array_int64_t_64'' starts here'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_64b.cpp'
+        FileOffset:      651
+        Replacements:    []
+      - Message:         'cannot apply fix-it because an alias checker has suggested a different fix-it; please remove one of the checkers (''google-readability-namespace-comments'', ''llvm-namespace-comment'') or ensure they are both configured the same'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+...

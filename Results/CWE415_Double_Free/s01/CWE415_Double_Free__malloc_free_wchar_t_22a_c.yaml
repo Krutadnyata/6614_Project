@@ -1,0 +1,311 @@
+---
+MainSourceFile:  '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+Diagnostics:
+  - DiagnosticName:  llvmlibc-restrict-system-libc-headers
+    DiagnosticMessage:
+      Message:         system include wchar.h not allowed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      635
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+          Offset:          635
+          Length:          20
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-non-const-global-variables
+    DiagnosticMessage:
+      Message:         'variable ''CWE415_Double_Free__malloc_free_wchar_t_22_badGlobal'' is non-const and globally accessible, consider making it const'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      764
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      973
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+          Offset:          977
+          Length:          0
+          ReplacementText: ' = NULL'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      1054
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  concurrency-mt-unsafe
+    DiagnosticMessage:
+      Message:         function is not thread safe
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      1100
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-unix.Malloc
+    DiagnosticMessage:
+      Message:         Use of memory after it is freed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      1291
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+          FileOffset:      1342
+          Length:          4
+    Notes:
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+        FileOffset:      1047
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+            FileOffset:      1047
+            Length:          27
+      - Message:         'Assuming ''data'' is not equal to NULL'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+        FileOffset:      1085
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+            FileOffset:      1085
+            Length:          12
+      - Message:         Taking false branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+        FileOffset:      1081
+        Replacements:    []
+      - Message:         Memory is released
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+        FileOffset:      1200
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+            FileOffset:      1200
+            Length:          10
+      - Message:         Use of memory after it is freed
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+        FileOffset:      1291
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+            FileOffset:      1342
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-non-const-global-variables
+    DiagnosticMessage:
+      Message:         'variable ''CWE415_Double_Free__malloc_free_wchar_t_22_goodB2G1Global'' is non-const and globally accessible, consider making it const'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      1491
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-non-const-global-variables
+    DiagnosticMessage:
+      Message:         'variable ''CWE415_Double_Free__malloc_free_wchar_t_22_goodB2G2Global'' is non-const and globally accessible, consider making it const'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      1559
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-non-const-global-variables
+    DiagnosticMessage:
+      Message:         'variable ''CWE415_Double_Free__malloc_free_wchar_t_22_goodG2BGlobal'' is non-const and globally accessible, consider making it const'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      1627
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      1917
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+          Offset:          1921
+          Length:          0
+          ReplacementText: ' = NULL'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      1998
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  concurrency-mt-unsafe
+    DiagnosticMessage:
+      Message:         function is not thread safe
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      2044
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-unix.Malloc
+    DiagnosticMessage:
+      Message:         Use of memory after it is freed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      2241
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''goodB2G1'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+        FileOffset:      3516
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+            FileOffset:      3516
+            Length:          10
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+        FileOffset:      1991
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+            FileOffset:      1991
+            Length:          27
+      - Message:         'Assuming ''data'' is not equal to NULL'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+        FileOffset:      2029
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+            FileOffset:      2029
+            Length:          12
+      - Message:         Taking false branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+        FileOffset:      2025
+        Replacements:    []
+      - Message:         Memory is released
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+        FileOffset:      2144
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+            FileOffset:      2144
+            Length:          10
+      - Message:         Use of memory after it is freed
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+        FileOffset:      2241
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+            FileOffset:      2297
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      2534
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+          Offset:          2538
+          Length:          0
+          ReplacementText: ' = NULL'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      2615
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  concurrency-mt-unsafe
+    DiagnosticMessage:
+      Message:         function is not thread safe
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      2661
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-unix.Malloc
+    DiagnosticMessage:
+      Message:         Use of memory after it is freed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      2857
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+          FileOffset:      2913
+          Length:          4
+    Notes:
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+        FileOffset:      2608
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+            FileOffset:      2608
+            Length:          27
+      - Message:         'Assuming ''data'' is not equal to NULL'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+        FileOffset:      2646
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+            FileOffset:      2646
+            Length:          12
+      - Message:         Taking false branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+        FileOffset:      2642
+        Replacements:    []
+      - Message:         Memory is released
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+        FileOffset:      2761
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+            FileOffset:      2761
+            Length:          10
+      - Message:         Use of memory after it is freed
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+        FileOffset:      2857
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+            FileOffset:      2913
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      3092
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+          Offset:          3096
+          Length:          0
+          ReplacementText: ' = NULL'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      3173
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  concurrency-mt-unsafe
+    DiagnosticMessage:
+      Message:         function is not thread safe
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_wchar_t_22a.c'
+      FileOffset:      3219
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+...

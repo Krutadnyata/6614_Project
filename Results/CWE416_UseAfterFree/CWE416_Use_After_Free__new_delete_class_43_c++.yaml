@@ -1,0 +1,437 @@
+---
+MainSourceFile:  '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+Diagnostics:
+  - DiagnosticName:  llvmlibc-restrict-system-libc-headers
+    DiagnosticMessage:
+      Message:         system include wchar.h not allowed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      663
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+          Offset:          663
+          Length:          20
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  hicpp-deprecated-headers
+    DiagnosticMessage:
+      Message:         'inclusion of deprecated C++ header ''wchar.h''; consider using ''cwchar'' instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      672
+      Replacements:    []
+    Notes:
+      - Message:         this fix will not be applied because it overlaps with another fix
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  bugprone-reserved-identifier
+    DiagnosticMessage:
+      Message:         'declaration uses identifier ''CWE416_Use_After_Free__new_delete_class_43'', which is a reserved identifier'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      695
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+          Offset:          695
+          Length:          42
+          ReplacementText: CWE416_Use_After_Free_new_delete_class_43
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-implementation-in-namespace
+    DiagnosticMessage:
+      Message:         '''__llvm_libc'' needs to be the outermost namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      695
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''TwoIntsClass *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      808
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+          FileOffset:      808
+          Length:          23
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      973
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+          FileOffset:      980
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      778
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+            FileOffset:      778
+            Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      1026
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+          Offset:          1030
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      1071
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+          Offset:          1071
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''badSource'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      1082
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      768
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printIntLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      1170
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      391
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-cplusplus.NewDelete
+    DiagnosticMessage:
+      Message:         Use of memory after it is freed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      1183
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+          FileOffset:      1183
+          Length:          12
+    Notes:
+      - Message:         'Calling ''badSource'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      1082
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+            FileOffset:      1082
+            Length:          15
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      815
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+            FileOffset:      815
+            Length:          16
+      - Message:         Memory is released
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      973
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+            FileOffset:      973
+            Length:          11
+      - Message:         'Returning; memory was released via 1st parameter'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      1082
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+            FileOffset:      1082
+            Length:          15
+      - Message:         Use of memory after it is freed
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      1183
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+            FileOffset:      1183
+            Length:          12
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodG2BSource'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      1398
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''TwoIntsClass *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      1442
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+          FileOffset:      1442
+          Length:          23
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodG2B'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      1580
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      1613
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+          Offset:          1617
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      1658
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+          Offset:          1658
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodG2BSource'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      1669
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      1398
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-cplusplus.NewDeleteLeaks
+    DiagnosticMessage:
+      Message:         'Potential leak of memory pointed to by ''data'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      1761
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''goodG2B'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      2552
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+            FileOffset:      2552
+            Length:          9
+      - Message:         'Calling ''goodG2BSource'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      1669
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+            FileOffset:      1669
+            Length:          19
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      1449
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+            FileOffset:      1449
+            Length:          16
+      - Message:         Returned allocated memory via 1st parameter
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      1669
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+            FileOffset:      1669
+            Length:          19
+      - Message:         'Potential leak of memory pointed to by ''data'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      1761
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printIntLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      1761
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      391
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodB2GSource'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      1945
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''TwoIntsClass *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      1989
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+          FileOffset:      1989
+          Length:          23
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      2154
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+          FileOffset:      2161
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      1959
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+            FileOffset:      1959
+            Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodB2G'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      2185
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      2218
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+          Offset:          2222
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      2263
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+          Offset:          2263
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodB2GSource'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      2274
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      1945
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodG2B'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      2552
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      1580
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodB2G'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      2568
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      2185
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-namespace-comments
+    DiagnosticMessage:
+      Message:         'namespace ''CWE416_Use_After_Free__new_delete_class_43'' not terminated with a closing comment'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+      FileOffset:      2610
+      Replacements:    []
+    Notes:
+      - Message:         'namespace ''CWE416_Use_After_Free__new_delete_class_43'' starts here'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_class_43.cpp'
+        FileOffset:      695
+        Replacements:    []
+      - Message:         'cannot apply fix-it because an alias checker has suggested a different fix-it; please remove one of the checkers (''google-readability-namespace-comments'', ''llvm-namespace-comment'') or ensure they are both configured the same'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+...

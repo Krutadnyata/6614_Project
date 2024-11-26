@@ -1,0 +1,899 @@
+---
+MainSourceFile:  '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+Diagnostics:
+  - DiagnosticName:  llvmlibc-restrict-system-libc-headers
+    DiagnosticMessage:
+      Message:         system include wchar.h not allowed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      573
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          573
+          Length:          20
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  hicpp-deprecated-headers
+    DiagnosticMessage:
+      Message:         'inclusion of deprecated C++ header ''wchar.h''; consider using ''cwchar'' instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      582
+      Replacements:    []
+    Notes:
+      - Message:         this fix will not be applied because it overlaps with another fix
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  bugprone-reserved-identifier
+    DiagnosticMessage:
+      Message:         'declaration uses identifier ''CWE415_Double_Free__new_delete_struct_11'', which is a reserved identifier'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      605
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          605
+          Length:          40
+          ReplacementText: CWE415_Double_Free_new_delete_struct_11
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-implementation-in-namespace
+    DiagnosticMessage:
+      Message:         '''__llvm_libc'' needs to be the outermost namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      605
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      706
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          710
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      751
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          751
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''globalReturnsTrue'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      765
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      1211
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      765
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          784
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''twoIntsStruct *'' (aka ''_twoIntsStruct *'')'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      802
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          FileOffset:      802
+          Length:          24
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      930
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          FileOffset:      937
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      690
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      690
+            Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''globalReturnsTrue'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      958
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      1211
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      958
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          977
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-cplusplus.NewDelete
+    DiagnosticMessage:
+      Message:         Attempt to free released memory
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      1057
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          FileOffset:      1057
+          Length:          11
+    Notes:
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      765
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      765
+            Length:          19
+      - Message:         Taking true branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      762
+        Replacements:    []
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      809
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      809
+            Length:          17
+      - Message:         Memory is released
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      930
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      930
+            Length:          11
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      958
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      958
+            Length:          19
+      - Message:         Taking true branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      955
+        Replacements:    []
+      - Message:         Attempt to free released memory
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      1057
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      1057
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      1057
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          FileOffset:      1064
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      690
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      690
+            Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodB2G1'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      1253
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      1288
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          1292
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      1333
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          1333
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''globalReturnsTrue'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      1347
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      1211
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      1347
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          1366
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''twoIntsStruct *'' (aka ''_twoIntsStruct *'')'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      1384
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          FileOffset:      1384
+          Length:          24
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      1512
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          FileOffset:      1519
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      1272
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      1272
+            Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''globalReturnsFalse'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      1540
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      1239
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      1540
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          1560
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      1654
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      311
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodB2G2'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      1970
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      2005
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          2009
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      2050
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          2050
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''globalReturnsTrue'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      2064
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      1211
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      2064
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          2083
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''twoIntsStruct *'' (aka ''_twoIntsStruct *'')'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      2101
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          FileOffset:      2101
+          Length:          24
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      2229
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          FileOffset:      2236
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      1989
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      1989
+            Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''globalReturnsTrue'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      2257
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      1211
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      2257
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          2276
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodG2B1'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      2567
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      2602
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          2606
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      2647
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          2647
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''globalReturnsFalse'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      2661
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      1239
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      2661
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          2681
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      2775
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      311
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''twoIntsStruct *'' (aka ''_twoIntsStruct *'')'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      2843
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          FileOffset:      2843
+          Length:          24
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''globalReturnsTrue'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      2965
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      1211
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      2965
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          2984
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      3064
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          FileOffset:      3071
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      2586
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      2586
+            Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-cplusplus.NewDeleteLeaks
+    DiagnosticMessage:
+      Message:         'Potential leak of memory pointed to by ''data'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      3085
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''goodG2B1'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      3621
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      3621
+            Length:          10
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      2661
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      2661
+            Length:          20
+      - Message:         Taking false branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      2658
+        Replacements:    []
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      2850
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      2850
+            Length:          17
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      2965
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      2965
+            Length:          19
+      - Message:         Taking false branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      2962
+        Replacements:    []
+      - Message:         'Potential leak of memory pointed to by ''data'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      3085
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodG2B2'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      3189
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      3224
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          3228
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      3269
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          3269
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''globalReturnsTrue'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      3283
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      1211
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      3283
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          3302
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''twoIntsStruct *'' (aka ''_twoIntsStruct *'')'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      3320
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          FileOffset:      3320
+          Length:          24
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''globalReturnsTrue'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      3442
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      1211
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''int'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      3442
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          Offset:          3461
+          Length:          0
+          ReplacementText: ' != 0'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      3541
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+          FileOffset:      3548
+          Length:          4
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      3208
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      3208
+            Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-cplusplus.NewDeleteLeaks
+    DiagnosticMessage:
+      Message:         'Potential leak of memory pointed to by ''data'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      3562
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''goodG2B2'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      3638
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      3638
+            Length:          10
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      3283
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      3283
+            Length:          19
+      - Message:         Taking true branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      3280
+        Replacements:    []
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      3327
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      3327
+            Length:          17
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      3442
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+            FileOffset:      3442
+            Length:          19
+      - Message:         Taking false branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      3439
+        Replacements:    []
+      - Message:         'Potential leak of memory pointed to by ''data'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      3562
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodB2G1'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      3587
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      1253
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodB2G2'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      3604
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      1970
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodG2B1'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      3621
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      2567
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodG2B2'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      3638
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      3189
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-namespace-comments
+    DiagnosticMessage:
+      Message:         'namespace ''CWE415_Double_Free__new_delete_struct_11'' not terminated with a closing comment'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+      FileOffset:      3681
+      Replacements:    []
+    Notes:
+      - Message:         'namespace ''CWE415_Double_Free__new_delete_struct_11'' starts here'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_struct_11.cpp'
+        FileOffset:      605
+        Replacements:    []
+      - Message:         'cannot apply fix-it because an alias checker has suggested a different fix-it; please remove one of the checkers (''google-readability-namespace-comments'', ''llvm-namespace-comment'') or ensure they are both configured the same'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+...

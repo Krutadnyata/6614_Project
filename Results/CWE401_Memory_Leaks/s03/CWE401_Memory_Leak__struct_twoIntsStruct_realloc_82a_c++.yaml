@@ -1,0 +1,619 @@
+---
+MainSourceFile:  '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+Diagnostics:
+  - DiagnosticName:  llvmlibc-implementation-in-namespace
+    DiagnosticMessage:
+      Message:         '''__llvm_libc'' needs to be the outermost namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      657
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      777
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          781
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      795
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          795
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''struct _twoIntsStruct *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      861
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          FileOffset:      861
+          Length:          80
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-type-cstyle-cast
+    DiagnosticMessage:
+      Message:         do not use C-style cast to convert between unrelated types
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      868
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-casting
+    DiagnosticMessage:
+      Message:         'C-style casts are discouraged; use static_cast'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      868
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          868
+          Length:          25
+          ReplacementText: 'static_cast<struct _twoIntsStruct *>('
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          941
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  bugprone-suspicious-realloc-usage
+    DiagnosticMessage:
+      Message:         '''data'' may be set to null if ''realloc'' fails, which may result in a leak of the original buffer'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      893
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          FileOffset:      901
+          Length:          4
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          FileOffset:      861
+          Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-no-malloc
+    DiagnosticMessage:
+      Message:         'do not manage memory manually; consider std::vector or std::string'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      893
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          FileOffset:      893
+          Length:          48
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'calling legacy resource function without passing a ''gsl::owner<>'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      893
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          FileOffset:      893
+          Length:          48
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      907
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      960
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          960
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  concurrency-mt-unsafe
+    DiagnosticMessage:
+      Message:         function is not thread safe
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      967
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-bounds-pointer-arithmetic
+    DiagnosticMessage:
+      Message:         do not use pointer arithmetic
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1025
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-bounds-pointer-arithmetic
+    DiagnosticMessage:
+      Message:         do not use pointer arithmetic
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1050
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printStructLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1075
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      902
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-casting
+    DiagnosticMessage:
+      Message:         'C-style casts are discouraged; use static_cast (if needed, the cast may be redundant)'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1091
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          1091
+          Length:          17
+          ReplacementText: 'static_cast<twoIntsStruct *>('
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          1116
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-bounds-pointer-arithmetic
+    DiagnosticMessage:
+      Message:         do not use pointer arithmetic
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1109
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-diagnostic-delete-abstract-non-virtual-dtor
+    DiagnosticMessage:
+      Message:         'delete called on ''CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82::CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82_base'' that is abstract but has non-virtual destructor'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1292
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1292
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          FileOffset:      1299
+          Length:          10
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+        FileOffset:      1124
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+            FileOffset:      1124
+            Length:          130
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodG2B'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1425
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1467
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          1471
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1485
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          1485
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-type-cstyle-cast
+    DiagnosticMessage:
+      Message:         do not use C-style cast to convert between unrelated types
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1565
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-casting
+    DiagnosticMessage:
+      Message:         'C-style casts are discouraged; use static_cast'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1565
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          1565
+          Length:          25
+          ReplacementText: 'static_cast<struct _twoIntsStruct *>('
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          1631
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-bounds-pointer-arithmetic
+    DiagnosticMessage:
+      Message:         do not use pointer arithmetic
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1681
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-bounds-pointer-arithmetic
+    DiagnosticMessage:
+      Message:         do not use pointer arithmetic
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1706
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printStructLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1731
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      902
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-casting
+    DiagnosticMessage:
+      Message:         'C-style casts are discouraged; use static_cast (if needed, the cast may be redundant)'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1747
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          1747
+          Length:          17
+          ReplacementText: 'static_cast<twoIntsStruct *>('
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          1772
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-bounds-pointer-arithmetic
+    DiagnosticMessage:
+      Message:         do not use pointer arithmetic
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1765
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-diagnostic-delete-abstract-non-virtual-dtor
+    DiagnosticMessage:
+      Message:         'delete called on ''CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82::CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82_base'' that is abstract but has non-virtual destructor'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1952
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      1952
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          FileOffset:      1959
+          Length:          10
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+        FileOffset:      1780
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+            FileOffset:      1780
+            Length:          134
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodB2G'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2041
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2083
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          2087
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2101
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          2101
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''struct _twoIntsStruct *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2167
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          FileOffset:      2167
+          Length:          80
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-type-cstyle-cast
+    DiagnosticMessage:
+      Message:         do not use C-style cast to convert between unrelated types
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2174
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-casting
+    DiagnosticMessage:
+      Message:         'C-style casts are discouraged; use static_cast'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2174
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          2174
+          Length:          25
+          ReplacementText: 'static_cast<struct _twoIntsStruct *>('
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          2247
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  bugprone-suspicious-realloc-usage
+    DiagnosticMessage:
+      Message:         '''data'' may be set to null if ''realloc'' fails, which may result in a leak of the original buffer'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2199
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          FileOffset:      2207
+          Length:          4
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          FileOffset:      2167
+          Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-no-malloc
+    DiagnosticMessage:
+      Message:         'do not manage memory manually; consider std::vector or std::string'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2199
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          FileOffset:      2199
+          Length:          48
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'calling legacy resource function without passing a ''gsl::owner<>'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2199
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          FileOffset:      2199
+          Length:          48
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2213
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2266
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          2266
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  concurrency-mt-unsafe
+    DiagnosticMessage:
+      Message:         function is not thread safe
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2273
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-bounds-pointer-arithmetic
+    DiagnosticMessage:
+      Message:         do not use pointer arithmetic
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2331
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-bounds-pointer-arithmetic
+    DiagnosticMessage:
+      Message:         do not use pointer arithmetic
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2356
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printStructLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2381
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      902
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-casting
+    DiagnosticMessage:
+      Message:         'C-style casts are discouraged; use static_cast (if needed, the cast may be redundant)'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2397
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          2397
+          Length:          17
+          ReplacementText: 'static_cast<twoIntsStruct *>('
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          Offset:          2422
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-bounds-pointer-arithmetic
+    DiagnosticMessage:
+      Message:         do not use pointer arithmetic
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2415
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-diagnostic-delete-abstract-non-virtual-dtor
+    DiagnosticMessage:
+      Message:         'delete called on ''CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82::CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82_base'' that is abstract but has non-virtual destructor'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2602
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'deleting a pointer through a type that is not marked ''gsl::owner<>''; consider using a smart pointer instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2602
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+          FileOffset:      2609
+          Length:          10
+    Notes:
+      - Message:         variable declared here
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+        FileOffset:      2430
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+            FileOffset:      2430
+            Length:          134
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodG2B'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2647
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+        FileOffset:      1425
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodB2G'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2663
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+        FileOffset:      2041
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-namespace-comments
+    DiagnosticMessage:
+      Message:         'namespace ''CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82'' not terminated with a closing comment'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+      FileOffset:      2705
+      Replacements:    []
+    Notes:
+      - Message:         'namespace ''CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82'' starts here'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_82a.cpp'
+        FileOffset:      657
+        Replacements:    []
+      - Message:         'cannot apply fix-it because an alias checker has suggested a different fix-it; please remove one of the checkers (''google-readability-namespace-comments'', ''llvm-namespace-comment'') or ensure they are both configured the same'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+...

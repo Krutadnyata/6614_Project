@@ -1,0 +1,320 @@
+---
+MainSourceFile:  '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+Diagnostics:
+  - DiagnosticName:  bugprone-reserved-identifier
+    DiagnosticMessage:
+      Message:         'declaration uses identifier ''CWE416_Use_After_Free__operator_equals_01'', which is a reserved identifier'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      89
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+          Offset:          89
+          Length:          41
+          ReplacementText: CWE416_Use_After_Free_operator_equals_01
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-implementation-in-namespace
+    DiagnosticMessage:
+      Message:         '''__llvm_libc'' needs to be the outermost namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      89
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-special-member-functions
+    DiagnosticMessage:
+      Message:         'class ''BadClass'' defines a non-default destructor, a copy constructor and a copy assignment operator but does not define a move constructor or a move assignment operator'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      162
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-prefer-member-initializer
+    DiagnosticMessage:
+      Message:         '''name'' should be initialized in a member initializer of the constructor'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      233
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+          Offset:          207
+          Length:          0
+          ReplacementText: ' : name(NULL)'
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+          Offset:          233
+          Length:          12
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      240
+      Replacements:    []
+    Notes:
+      - Message:         this fix will not be applied because it overlaps with another fix
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-explicit-constructor
+    DiagnosticMessage:
+      Message:         single-argument constructors must be marked explicit to avoid unintentional implicit conversions
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      272
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+          Offset:          272
+          Length:          0
+          ReplacementText: 'explicit '
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''const char *'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      328
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+          Offset:          332
+          Length:          0
+          ReplacementText: ' != nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''char *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      366
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+          FileOffset:      366
+          Length:          39
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-security.insecureAPI.strcpy
+    DiagnosticMessage:
+      Message:         'Call to function ''strcpy'' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as ''strlcpy''. CWE-119'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      424
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+          FileOffset:      424
+          Length:          6
+    Notes:
+      - Message:         'Call to function ''strcpy'' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as ''strlcpy''. CWE-119'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+        FileOffset:      424
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+            FileOffset:      424
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''char *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      517
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+          FileOffset:      517
+          Length:          24
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''char *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      831
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+          FileOffset:      831
+          Length:          52
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-prefer-member-initializer
+    DiagnosticMessage:
+      Message:         '''name'' should be initialized in a member initializer of the constructor'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      831
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+          Offset:          805
+          Length:          0
+          ReplacementText: ' : name(new char[strlen(badClassObject.name)+1])'
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+          Offset:          831
+          Length:          54
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-security.insecureAPI.strcpy
+    DiagnosticMessage:
+      Message:         'Call to function ''strcpy'' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as ''strlcpy''. CWE-119'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      899
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+          FileOffset:      899
+          Length:          6
+    Notes:
+      - Message:         'Call to function ''strcpy'' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as ''strlcpy''. CWE-119'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+        FileOffset:      899
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+            FileOffset:      899
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  bugprone-unhandled-self-assignment
+    DiagnosticMessage:
+      Message:         'operator=() does not handle self-assignment properly'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      980
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      980
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+          Offset:          970
+          Length:          9
+          ReplacementText: auto
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+          Offset:          1021
+          Length:          0
+          ReplacementText: ' -> BadClass&'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''char *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      1130
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+          FileOffset:      1130
+          Length:          52
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-cplusplus.NewDelete
+    DiagnosticMessage:
+      Message:         Use of memory after it is freed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      1152
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+          FileOffset:      1159
+          Length:          19
+    Notes:
+      - Message:         'Assuming badClassObject == *this'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+        FileOffset:      970
+        Replacements:    []
+      - Message:         Memory is released
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+        FileOffset:      1095
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+            FileOffset:      1095
+            Length:          20
+      - Message:         Use of memory after it is freed
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+        FileOffset:      1152
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+            FileOffset:      1159
+            Length:          19
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-security.insecureAPI.strcpy
+    DiagnosticMessage:
+      Message:         'Call to function ''strcpy'' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as ''strlcpy''. CWE-119'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      1198
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+          FileOffset:      1198
+          Length:          6
+    Notes:
+      - Message:         'Call to function ''strcpy'' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as ''strlcpy''. CWE-119'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+        FileOffset:      1198
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+            FileOffset:      1198
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-non-private-member-variables-in-classes
+    DiagnosticMessage:
+      Message:         'member variable ''name'' has public visibility'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      1449
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''operator='' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      1538
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+        FileOffset:      980
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      1561
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      311
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-namespace-comments
+    DiagnosticMessage:
+      Message:         'namespace ''CWE416_Use_After_Free__operator_equals_01'' not terminated with a closing comment'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+      FileOffset:      1623
+      Replacements:    []
+    Notes:
+      - Message:         'namespace ''CWE416_Use_After_Free__operator_equals_01'' starts here'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__operator_equals_01_bad.cpp'
+        FileOffset:      89
+        Replacements:    []
+      - Message:         'cannot apply fix-it because an alias checker has suggested a different fix-it; please remove one of the checkers (''google-readability-namespace-comments'', ''llvm-namespace-comment'') or ensure they are both configured the same'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+...

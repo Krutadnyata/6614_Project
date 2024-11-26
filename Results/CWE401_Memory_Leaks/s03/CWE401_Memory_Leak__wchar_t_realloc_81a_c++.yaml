@@ -1,0 +1,451 @@
+---
+MainSourceFile:  '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+Diagnostics:
+  - DiagnosticName:  llvmlibc-implementation-in-namespace
+    DiagnosticMessage:
+      Message:         '''__llvm_libc'' needs to be the outermost namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      633
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      726
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          Offset:          730
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      744
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          Offset:          744
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''wchar_t *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      810
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          FileOffset:      810
+          Length:          52
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-type-cstyle-cast
+    DiagnosticMessage:
+      Message:         do not use C-style cast to convert between unrelated types
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      817
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-casting
+    DiagnosticMessage:
+      Message:         'C-style casts are discouraged; use static_cast'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      817
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          Offset:          817
+          Length:          11
+          ReplacementText: 'static_cast<wchar_t *>('
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          Offset:          862
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  bugprone-suspicious-realloc-usage
+    DiagnosticMessage:
+      Message:         '''data'' may be set to null if ''realloc'' fails, which may result in a leak of the original buffer'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      828
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          FileOffset:      836
+          Length:          4
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          FileOffset:      810
+          Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-no-malloc
+    DiagnosticMessage:
+      Message:         'do not manage memory manually; consider std::vector or std::string'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      828
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          FileOffset:      828
+          Length:          34
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'calling legacy resource function without passing a ''gsl::owner<>'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      828
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          FileOffset:      828
+          Length:          34
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      842
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      881
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          Offset:          881
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  concurrency-mt-unsafe
+    DiagnosticMessage:
+      Message:         function is not thread safe
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      888
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''wcscpy'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      946
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/usr/include/wchar.h'
+        FileOffset:      2798
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printWLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      978
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      349
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodG2B'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1255
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1283
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          Offset:          1287
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1301
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          Offset:          1301
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-type-cstyle-cast
+    DiagnosticMessage:
+      Message:         do not use C-style cast to convert between unrelated types
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1381
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-casting
+    DiagnosticMessage:
+      Message:         'C-style casts are discouraged; use static_cast'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1381
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          Offset:          1381
+          Length:          11
+          ReplacementText: 'static_cast<wchar_t *>('
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          Offset:          1419
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''wcscpy'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1469
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/usr/include/wchar.h'
+        FileOffset:      2798
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printWLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1501
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      349
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-use-anonymous-namespace
+    DiagnosticMessage:
+      Message:         'function ''goodB2G'' declared ''static'', move to anonymous namespace instead'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1738
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''data'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1766
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          Offset:          1770
+          Length:          0
+          ReplacementText: ' = nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1784
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          Offset:          1784
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''wchar_t *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1850
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          FileOffset:      1850
+          Length:          52
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-pro-type-cstyle-cast
+    DiagnosticMessage:
+      Message:         do not use C-style cast to convert between unrelated types
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1857
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-casting
+    DiagnosticMessage:
+      Message:         'C-style casts are discouraged; use static_cast'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1857
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          Offset:          1857
+          Length:          11
+          ReplacementText: 'static_cast<wchar_t *>('
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          Offset:          1902
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  bugprone-suspicious-realloc-usage
+    DiagnosticMessage:
+      Message:         '''data'' may be set to null if ''realloc'' fails, which may result in a leak of the original buffer'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1868
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          FileOffset:      1876
+          Length:          4
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          FileOffset:      1850
+          Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-no-malloc
+    DiagnosticMessage:
+      Message:         'do not manage memory manually; consider std::vector or std::string'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1868
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          FileOffset:      1868
+          Length:          34
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'calling legacy resource function without passing a ''gsl::owner<>'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1868
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          FileOffset:      1868
+          Length:          34
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1882
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1921
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+          Offset:          1921
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  concurrency-mt-unsafe
+    DiagnosticMessage:
+      Message:         function is not thread safe
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1928
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''wcscpy'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      1986
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/usr/include/wchar.h'
+        FileOffset:      2798
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printWLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      2018
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      349
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodG2B'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      2211
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+        FileOffset:      1255
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''goodB2G'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      2227
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+        FileOffset:      1738
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-namespace-comments
+    DiagnosticMessage:
+      Message:         'namespace ''CWE401_Memory_Leak__wchar_t_realloc_81'' not terminated with a closing comment'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+      FileOffset:      2269
+      Replacements:    []
+    Notes:
+      - Message:         'namespace ''CWE401_Memory_Leak__wchar_t_realloc_81'' starts here'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s03/CWE401_Memory_Leak__wchar_t_realloc_81a.cpp'
+        FileOffset:      633
+        Replacements:    []
+      - Message:         'cannot apply fix-it because an alias checker has suggested a different fix-it; please remove one of the checkers (''google-readability-namespace-comments'', ''llvm-namespace-comment'') or ensure they are both configured the same'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+...

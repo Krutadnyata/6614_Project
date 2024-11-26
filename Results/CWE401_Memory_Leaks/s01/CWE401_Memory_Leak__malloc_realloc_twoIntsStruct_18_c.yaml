@@ -1,0 +1,156 @@
+---
+MainSourceFile:  '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+Diagnostics:
+  - DiagnosticName:  llvmlibc-restrict-system-libc-headers
+    DiagnosticMessage:
+      Message:         system include wchar.h not allowed
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+      FileOffset:      530
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+          Offset:          530
+          Length:          20
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+      FileOffset:      731
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  concurrency-mt-unsafe
+    DiagnosticMessage:
+      Message:         function is not thread safe
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+      FileOffset:      787
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  bugprone-suspicious-realloc-usage
+    DiagnosticMessage:
+      Message:         '''data'' may be set to null if ''realloc'' fails, which may result in a leak of the original buffer'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+      FileOffset:      1057
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+          FileOffset:      1065
+          Length:          4
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+          FileOffset:      1033
+          Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '130000 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+      FileOffset:      1072
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-unix.Malloc
+    DiagnosticMessage:
+      Message:         'Potential leak of memory pointed to by ''data'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+      FileOffset:      1345
+      Replacements:    []
+    Notes:
+      - Message:         Control jumps to line 29
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+        FileOffset:      650
+        Replacements:    []
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+        FileOffset:      724
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+            FileOffset:      724
+            Length:          33
+      - Message:         'Assuming ''data'' is not equal to NULL'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+        FileOffset:      772
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+            FileOffset:      772
+            Length:          12
+      - Message:         Taking false branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+        FileOffset:      768
+        Replacements:    []
+      - Message:         Attempt to reallocate memory
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+        FileOffset:      1057
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+            FileOffset:      1057
+            Length:          45
+      - Message:         'Assuming ''data'' is equal to NULL'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+        FileOffset:      1117
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+            FileOffset:      1117
+            Length:          12
+      - Message:         Reallocation failed
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+        FileOffset:      1117
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+            FileOffset:      1117
+            Length:          12
+      - Message:         Taking false branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+        FileOffset:      1113
+        Replacements:    []
+      - Message:         'Potential leak of memory pointed to by ''data'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+        FileOffset:      1345
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '100 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+      FileOffset:      1560
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  concurrency-mt-unsafe
+    DiagnosticMessage:
+      Message:         function is not thread safe
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+      FileOffset:      1616
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''tmpData'' is not initialized'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+      FileOffset:      1651
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+          Offset:          1658
+          Length:          0
+          ReplacementText: ' = NULL'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-avoid-magic-numbers
+    DiagnosticMessage:
+      Message:         '130000 is a magic number; consider replacing it with a named constant'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_18.c'
+      FileOffset:      1852
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+...

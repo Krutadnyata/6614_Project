@@ -1,0 +1,286 @@
+---
+MainSourceFile:  '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+Diagnostics:
+  - DiagnosticName:  bugprone-reserved-identifier
+    DiagnosticMessage:
+      Message:         'declaration uses identifier ''CWE415_Double_Free__no_assignment_op_01'', which is a reserved identifier'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+      FileOffset:      86
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+          Offset:          86
+          Length:          39
+          ReplacementText: CWE415_Double_Free_no_assignment_op_01
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-implementation-in-namespace
+    DiagnosticMessage:
+      Message:         '''__llvm_libc'' needs to be the outermost namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+      FileOffset:      86
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-special-member-functions
+    DiagnosticMessage:
+      Message:         'class ''BadClass'' defines a non-default destructor and a copy constructor but does not define a copy assignment operator, a move constructor or a move assignment operator'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+      FileOffset:      157
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-explicit-constructor
+    DiagnosticMessage:
+      Message:         single-argument constructors must be marked explicit to avoid unintentional implicit conversions
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+      FileOffset:      192
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+          Offset:          192
+          Length:          0
+          ReplacementText: 'explicit '
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion ''const char *'' -> bool'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+      FileOffset:      247
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+          Offset:          251
+          Length:          0
+          ReplacementText: ' != nullptr'
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''char *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+      FileOffset:      286
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+          FileOffset:      286
+          Length:          39
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-security.insecureAPI.strcpy
+    DiagnosticMessage:
+      Message:         'Call to function ''strcpy'' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as ''strlcpy''. CWE-119'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+      FileOffset:      344
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+          FileOffset:      344
+          Length:          6
+    Notes:
+      - Message:         'Call to function ''strcpy'' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as ''strlcpy''. CWE-119'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+        FileOffset:      344
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+            FileOffset:      344
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''char *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+      FileOffset:      437
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+          FileOffset:      437
+          Length:          24
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-cplusplus.NewDelete
+    DiagnosticMessage:
+      Message:         Attempt to free released memory
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+      FileOffset:      575
+      Replacements:    []
+    Notes:
+      - Message:         'Calling constructor for ''BadClass'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+        FileOffset:      947
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+            FileOffset:      947
+            Length:          22
+      - Message:         '''data'' is non-null'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+        FileOffset:      247
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+            FileOffset:      247
+            Length:          4
+      - Message:         Taking true branch
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+        FileOffset:      243
+        Replacements:    []
+      - Message:         Memory is allocated
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+        FileOffset:      299
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+            FileOffset:      299
+            Length:          26
+      - Message:         'Returning from constructor for ''BadClass'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+        FileOffset:      947
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+            FileOffset:      947
+            Length:          22
+      - Message:         'Calling ''~BadClass'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+        FileOffset:      1186
+        Replacements:    []
+      - Message:         Memory is released
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+        FileOffset:      575
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+            FileOffset:      575
+            Length:          14
+      - Message:         'Returning from ''~BadClass'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+        FileOffset:      1186
+        Replacements:    []
+      - Message:         'Calling ''~BadClass'''
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+        FileOffset:      1186
+        Replacements:    []
+      - Message:         Attempt to free released memory
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+        FileOffset:      575
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+            FileOffset:      575
+            Length:          14
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''printLine'' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+      FileOffset:      654
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcasesupport/std_testcase_io.h'
+        FileOffset:      311
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-owning-memory
+    DiagnosticMessage:
+      Message:         'assigning newly created ''gsl::owner<>'' to non-owner ''char *'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+      FileOffset:      753
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+          FileOffset:      753
+          Length:          54
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  cppcoreguidelines-prefer-member-initializer
+    DiagnosticMessage:
+      Message:         '''data'' should be initialized in a member initializer of the constructor'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+      FileOffset:      753
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+          Offset:          727
+          Length:          0
+          ReplacementText: ' : data(new char[strlen(badClassObject.data) + 1])'
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+          Offset:          753
+          Length:          55
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  clang-analyzer-security.insecureAPI.strcpy
+    DiagnosticMessage:
+      Message:         'Call to function ''strcpy'' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as ''strlcpy''. CWE-119'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+      FileOffset:      822
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+          FileOffset:      822
+          Length:          6
+    Notes:
+      - Message:         'Call to function ''strcpy'' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as ''strlcpy''. CWE-119'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+        FileOffset:      822
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+            FileOffset:      822
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  misc-const-correctness
+    DiagnosticMessage:
+      Message:         'variable ''badClassObject1'' of type ''BadClass'' can be declared ''const'''
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+      FileOffset:      938
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  readability-isolate-declaration
+    DiagnosticMessage:
+      Message:         multiple declarations in a single statement reduces readability
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+      FileOffset:      938
+      Replacements:
+        - FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+          Offset:          938
+          Length:          56
+          ReplacementText: "BadClass badClassObject1(\"One\");\n    BadClass badClassObject2(\"Two\");"
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  llvmlibc-callee-namespace
+    DiagnosticMessage:
+      Message:         '''operator='' must resolve to a function declared within the ''__llvm_libc'' namespace'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+      FileOffset:      1130
+      Replacements:    []
+    Notes:
+      - Message:         resolves to this declaration
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+        FileOffset:      157
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+  - DiagnosticName:  google-readability-namespace-comments
+    DiagnosticMessage:
+      Message:         'namespace ''CWE415_Double_Free__no_assignment_op_01'' not terminated with a closing comment'
+      FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+      FileOffset:      1215
+      Replacements:    []
+    Notes:
+      - Message:         'namespace ''CWE415_Double_Free__no_assignment_op_01'' starts here'
+        FilePath:        '/home/kali/6614_Project/Juliet/C/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__no_assignment_op_01_bad.cpp'
+        FileOffset:      86
+        Replacements:    []
+      - Message:         'cannot apply fix-it because an alias checker has suggested a different fix-it; please remove one of the checkers (''google-readability-namespace-comments'', ''llvm-namespace-comment'') or ensure they are both configured the same'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/kali/6614_Project/6614_Project'
+...
